@@ -1,0 +1,373 @@
+[
+  {
+    "id": "session_1793207136550",
+    "name": "Capture on eth1",
+    "interfaceName": "eth1",
+    "startTime": 1793207136550,
+    "packetCount": 5,
+    "totalBytes": 1820,
+    "bpfFilter": "",
+    "status": "stopped",
+    "packets": [
+      {
+        "id": 1,
+        "timestamp": 1793207136652,
+        "timeStr": "17:05:36.652",
+        "relTime": 0.102,
+        "srcIp": "1.1.1.1",
+        "dstIp": "169.254.8.1",
+        "srcPort": 53,
+        "dstPort": 54812,
+        "protocol": "DNS",
+        "length": 103,
+        "info": "Standard query response 0x9165 A wikipedia.org A 142.250.190.46",
+        "direction": "INCOMING",
+        "ethernet": {
+          "srcMac": "00:1a:2b:3c:4d:5e",
+          "dstMac": "00:00:00:00:00:00",
+          "etherType": "0x0800 (IPv4)"
+        },
+        "ip": {
+          "version": 4,
+          "ihl": 5,
+          "tos": 0,
+          "totalLength": 89,
+          "identification": 39276,
+          "flags": {
+            "reserved": false,
+            "dontFragment": true,
+            "moreFragments": false
+          },
+          "fragmentOffset": 0,
+          "ttl": 57,
+          "protocol": 17,
+          "protocolName": "UDP",
+          "headerChecksum": "0x88f2",
+          "srcIp": "1.1.1.1",
+          "dstIp": "169.254.8.1"
+        },
+        "udp": {
+          "srcPort": 53,
+          "dstPort": 54812,
+          "length": 69,
+          "checksum": "0xa41c"
+        },
+        "dns": {
+          "transactionId": "9165",
+          "flags": {
+            "isResponse": true,
+            "opcode": "Standard query (0)",
+            "authoritative": false,
+            "truncated": false,
+            "recursionDesired": true,
+            "recursionAvailable": true,
+            "responseCode": "No error (0)"
+          },
+          "questionsCount": 1,
+          "answersCount": 1,
+          "questions": [
+            {
+              "name": "wikipedia.org",
+              "type": "A (Host Address)",
+              "class": "IN"
+            }
+          ],
+          "answers": [
+            {
+              "name": "wikipedia.org",
+              "type": "A",
+              "ttl": 300,
+              "data": "142.250.190.46"
+            }
+          ]
+        },
+        "rawHex": "00 1a 2b 3c 4d 5e 5c e9 1e 88 21 fa 08 00 45 00 00 4a",
+        "rawAscii": "..+<M^\\..!.!E..J"
+      },
+      {
+        "id": 2,
+        "timestamp": 1793207136783,
+        "timeStr": "17:05:36.783",
+        "relTime": 0.233,
+        "srcIp": "93.184.216.34",
+        "dstIp": "169.254.8.1",
+        "srcPort": 80,
+        "dstPort": 54321,
+        "protocol": "HTTP",
+        "length": 480,
+        "info": "HTTP/1.1 200 OK (text/html)",
+        "direction": "INCOMING",
+        "ethernet": {
+          "srcMac": "00:1a:2b:3c:4d:5e",
+          "dstMac": "00:00:00:00:00:00",
+          "etherType": "0x0800 (IPv4)"
+        },
+        "ip": {
+          "version": 4,
+          "ihl": 5,
+          "tos": 0,
+          "totalLength": 466,
+          "identification": 4120,
+          "flags": {
+            "reserved": false,
+            "dontFragment": true,
+            "moreFragments": false
+          },
+          "fragmentOffset": 0,
+          "ttl": 53,
+          "protocol": 6,
+          "protocolName": "TCP",
+          "headerChecksum": "0x3344",
+          "srcIp": "93.184.216.34",
+          "dstIp": "169.254.8.1"
+        },
+        "tcp": {
+          "srcPort": 80,
+          "dstPort": 54321,
+          "seqNumber": 1,
+          "ackNumber": 1,
+          "dataOffset": 5,
+          "flags": {
+            "cwr": false,
+            "ece": false,
+            "urg": false,
+            "ack": true,
+            "psh": true,
+            "rst": false,
+            "syn": false,
+            "fin": false
+          },
+          "flagsSummary": "[PSH, ACK]",
+          "windowSize": 64240,
+          "checksum": "0x9923",
+          "urgentPointer": 0
+        },
+        "http": {
+          "type": "RESPONSE",
+          "version": "HTTP/1.1",
+          "statusCode": 200,
+          "statusText": "OK",
+          "headers": {
+            "Host": "example.com",
+            "User-Agent": "NetScope/1.0",
+            "Content-Type": "text/html; charset=UTF-8"
+          }
+        },
+        "rawHex": "47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a 48 6f 73 74",
+        "rawAscii": "GET / HTTP/1.1..Host"
+      },
+      {
+        "id": 3,
+        "timestamp": 1793207137078,
+        "timeStr": "17:05:37.078",
+        "relTime": 0.528,
+        "srcIp": "104.16.132.229",
+        "dstIp": "169.254.8.1",
+        "srcPort": 443,
+        "dstPort": 56822,
+        "protocol": "TLS",
+        "length": 517,
+        "info": "Client Hello, TLS 1.3, SNI: google.com",
+        "direction": "INCOMING",
+        "ethernet": {
+          "srcMac": "00:1a:2b:3c:4d:5e",
+          "dstMac": "00:00:00:00:00:00",
+          "etherType": "0x0800 (IPv4)"
+        },
+        "ip": {
+          "version": 4,
+          "ihl": 5,
+          "tos": 0,
+          "totalLength": 503,
+          "identification": 55692,
+          "flags": {
+            "reserved": false,
+            "dontFragment": true,
+            "moreFragments": false
+          },
+          "fragmentOffset": 0,
+          "ttl": 54,
+          "protocol": 6,
+          "protocolName": "TCP",
+          "headerChecksum": "0x18a9",
+          "srcIp": "104.16.132.229",
+          "dstIp": "169.254.8.1"
+        },
+        "tcp": {
+          "srcPort": 443,
+          "dstPort": 56822,
+          "seqNumber": 10050,
+          "ackNumber": 10051,
+          "dataOffset": 5,
+          "flags": {
+            "cwr": false,
+            "ece": false,
+            "urg": false,
+            "ack": true,
+            "psh": false,
+            "rst": false,
+            "syn": false,
+            "fin": false
+          },
+          "flagsSummary": "[ACK]",
+          "windowSize": 64240,
+          "checksum": "0xc112",
+          "urgentPointer": 0
+        },
+        "tls": {
+          "recordType": "Handshake",
+          "version": "TLS 1.3",
+          "handshakeType": "Client Hello",
+          "serverNameIndication": "google.com"
+        },
+        "rawHex": "5c e9 1e 88 21 fa 00 1a 2b 3c 4d 5e 08 00 45 00 02 05 1a 2b",
+        "rawAscii": "\\..!.!..+<M^..E....+"
+      },
+      {
+        "id": 4,
+        "timestamp": 1793207137220,
+        "timeStr": "17:05:37.220",
+        "relTime": 0.67,
+        "srcIp": "93.184.216.34",
+        "dstIp": "169.254.8.1",
+        "srcPort": 80,
+        "dstPort": 54321,
+        "protocol": "HTTP",
+        "length": 480,
+        "info": "HTTP/1.1 200 OK (text/html)",
+        "direction": "INCOMING",
+        "ethernet": {
+          "srcMac": "00:1a:2b:3c:4d:5e",
+          "dstMac": "00:00:00:00:00:00",
+          "etherType": "0x0800 (IPv4)"
+        },
+        "ip": {
+          "version": 4,
+          "ihl": 5,
+          "tos": 0,
+          "totalLength": 466,
+          "identification": 4120,
+          "flags": {
+            "reserved": false,
+            "dontFragment": true,
+            "moreFragments": false
+          },
+          "fragmentOffset": 0,
+          "ttl": 53,
+          "protocol": 6,
+          "protocolName": "TCP",
+          "headerChecksum": "0x3344",
+          "srcIp": "93.184.216.34",
+          "dstIp": "169.254.8.1"
+        },
+        "tcp": {
+          "srcPort": 80,
+          "dstPort": 54321,
+          "seqNumber": 1,
+          "ackNumber": 1,
+          "dataOffset": 5,
+          "flags": {
+            "cwr": false,
+            "ece": false,
+            "urg": false,
+            "ack": true,
+            "psh": true,
+            "rst": false,
+            "syn": false,
+            "fin": false
+          },
+          "flagsSummary": "[PSH, ACK]",
+          "windowSize": 64240,
+          "checksum": "0x9923",
+          "urgentPointer": 0
+        },
+        "http": {
+          "type": "RESPONSE",
+          "version": "HTTP/1.1",
+          "statusCode": 200,
+          "statusText": "OK",
+          "headers": {
+            "Host": "example.com",
+            "User-Agent": "NetScope/1.0",
+            "Content-Type": "text/html; charset=UTF-8"
+          }
+        },
+        "rawHex": "47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a 48 6f 73 74",
+        "rawAscii": "GET / HTTP/1.1..Host"
+      },
+      {
+        "id": 5,
+        "timestamp": 1793207137457,
+        "timeStr": "17:05:37.457",
+        "relTime": 0.907,
+        "srcIp": "169.254.8.1",
+        "dstIp": "93.184.216.34",
+        "srcPort": 54321,
+        "dstPort": 80,
+        "protocol": "HTTP",
+        "length": 240,
+        "info": "HTTP GET /index.html HTTP/1.1",
+        "direction": "OUTGOING",
+        "ethernet": {
+          "srcMac": "00:00:00:00:00:00",
+          "dstMac": "00:1a:2b:3c:4d:5e",
+          "etherType": "0x0800 (IPv4)"
+        },
+        "ip": {
+          "version": 4,
+          "ihl": 5,
+          "tos": 0,
+          "totalLength": 226,
+          "identification": 4120,
+          "flags": {
+            "reserved": false,
+            "dontFragment": true,
+            "moreFragments": false
+          },
+          "fragmentOffset": 0,
+          "ttl": 64,
+          "protocol": 6,
+          "protocolName": "TCP",
+          "headerChecksum": "0x3344",
+          "srcIp": "169.254.8.1",
+          "dstIp": "93.184.216.34"
+        },
+        "tcp": {
+          "srcPort": 54321,
+          "dstPort": 80,
+          "seqNumber": 1,
+          "ackNumber": 1,
+          "dataOffset": 5,
+          "flags": {
+            "cwr": false,
+            "ece": false,
+            "urg": false,
+            "ack": true,
+            "psh": true,
+            "rst": false,
+            "syn": false,
+            "fin": false
+          },
+          "flagsSummary": "[PSH, ACK]",
+          "windowSize": 64240,
+          "checksum": "0x9923",
+          "urgentPointer": 0
+        },
+        "http": {
+          "type": "REQUEST",
+          "method": "GET",
+          "path": "/index.html",
+          "version": "HTTP/1.1",
+          "headers": {
+            "Host": "example.com",
+            "User-Agent": "NetScope/1.0",
+            "Content-Type": "text/html; charset=UTF-8"
+          }
+        },
+        "rawHex": "47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a 48 6f 73 74",
+        "rawAscii": "GET / HTTP/1.1..Host"
+      }
+    ],
+    "endTime": 1793207137588
+  }
+]

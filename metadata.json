@@ -1,0 +1,6 @@
+{
+  "name": "NetScope — Network Packet Analyser",
+  "description": "Educational network packet analyser and observability dashboard for Computer Networks projects featuring live capture, protocol decoding, traffic analytics, and PCAP inspection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
